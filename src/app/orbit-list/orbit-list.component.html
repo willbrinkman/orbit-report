@@ -1,0 +1,22 @@
+<h3>Orbit Report</h3>
+<table>
+  <tr>
+    <th (click)="sort('name')" class="sortable">Name</th>
+    <th (click)="sort('type')" class="sortable">Type</th>
+    <th>Operational</th>
+    <th>Orbit Type</th>
+    <th>Launch Date</th>
+  </tr>
+  <tr
+    *ngFor="let sat of satellites; let i = index"
+    [attr.data-index]="i"
+    [class.warning]="sat.shouldShowWarning()"
+    [class.zebra]="satellites.indexOf(sat) % 2 === 0"
+  >
+    <td>{{ sat.name }}</td>
+    <td>{{ sat.type }}</td>
+    <td>{{ sat.operational }}</td>
+    <td>{{ sat.orbitType }}</td>
+    <td>{{ sat.launchDate }}</td>
+  </tr>
+</table>

@@ -1,0 +1,32 @@
+.sortable {
+  cursor: pointer;
+  color: #dd5;
+}
+
+.warning {
+  background-color: #810505;
+}
+.zebra {
+  background-color: greenyellow;
+}
+
+table {
+  color: rgb(88, 86, 86);
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 12px 0;
+  min-width: 300px;
+  background: #1f1f20;
+}
+
+.header-row {
+  background: #34495e;
+  color: #fff;
+}
+
+th,
+td {
+  text-align: left;
+  margin: 5px 10px;
+  padding: 6px;
+}
