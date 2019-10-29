@@ -11,6 +11,7 @@ export class AppComponent {
 
   sourceList: Satellite[];
   displayList: Satellite[];
+  
   constructor() {
     this.sourceList = [];
     this.displayList = [];
@@ -36,7 +37,8 @@ export class AppComponent {
       let name = this.sourceList[i].name.toLowerCase();
       if (name.indexOf(searchTerm) >= 0) {
         matchingSatellites.push(this.sourceList[i]);
-      }
+      }    
+    
     }
     this.displayList = matchingSatellites;
   }
